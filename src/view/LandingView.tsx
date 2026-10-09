@@ -76,12 +76,12 @@ export default function LandingView() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative w-full aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border-4 border-white"
+            className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border-4 border-white"
           >
             <img 
               src="/image%20for%20design/hero.jpg" 
               alt="Jersey Hero Image" 
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover bg-white"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
                 target.src = "https://via.placeholder.com/800x600?text=Please+add+hero.jpg";
@@ -107,7 +107,7 @@ export default function LandingView() {
                 {
                   icon: <Users className="text-primary" size={28} />,
                   title: "খাতা-কলমের হিসাব বাদ",
-                  desc: "কে টাকা দিলো, কার সাইজ কত—এসব আর খাতায় লিখে রাখতে হবে না। সবাই নিজে নিজে পোর্টালে ঢুকে আপডেট করবে।"
+                  desc: "কে টাকা দিলো, কার সাইজ কত—এসব আর খাতায় লিখে রাখতে হবে ওয়েবসাইটে আপডেট করা হবে।"
                 },
                 {
                   icon: <Shirt className="text-primary" size={28} />,
@@ -144,12 +144,12 @@ export default function LandingView() {
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="relative w-full aspect-square rounded-2xl overflow-hidden shadow-xl border-4 border-white"
+              className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-xl border-4 border-white"
             >
               <img 
                 src="/image%20for%20design/payment.jpg" 
                 alt="Payment Proof Demo" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover bg-white"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
                   target.src = "https://via.placeholder.com/800x800?text=Please+add+payment.jpg";
