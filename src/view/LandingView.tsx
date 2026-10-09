@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Users, ShieldCheck, ArrowRight } from "lucide-react";
+import { Users, ShieldCheck, ArrowRight, Shirt } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
